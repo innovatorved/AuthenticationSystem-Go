@@ -1,4 +1,4 @@
-module github.com/innovatorved/AuthenticationSystem-golang
+module github.com/innovatorved/authenticationSystem-golang
 
 go 1.19
 
