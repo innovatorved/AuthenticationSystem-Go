@@ -1,10 +1,10 @@
 package main
 
 import (
-	routes "authenticationSystem-golang/routes"
 	"os"
 
 	"github.com/gin-gonic/gin"
+	routes "github.com/innovatorved/authenticationSystem-golang/routes"
 )
 
 func main() {
