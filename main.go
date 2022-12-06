@@ -23,9 +23,6 @@ func main() {
 	router := gin.New()
 	router.Use(gin.Logger())
 
-	routes.AuthRoutes(router)
-	routes.UserRoutes(router)
-
 	router.GET("/api-1", func(c *gin.Context) {
 		c.JSON(200, gin.H{"success": "Access granted for router"})
 	})
@@ -33,6 +30,13 @@ func main() {
 	router.GET("/api-2", func(c *gin.Context) {
 		c.JSON(200, gin.H{"success": "Access granted for router api2"})
 	})
+
+	router.GET("/hello", func(c *gin.Context) {
+		c.JSON(200, gin.H{"Message": "Hi Developers!"})
+	})
+
+	routes.AuthRoutes(router)
+	routes.UserRoutes(router)
 
 	router.Run(":" + port)
 }
