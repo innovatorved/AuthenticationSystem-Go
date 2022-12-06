@@ -1,15 +1,21 @@
 package main
 
 import (
+	"log"
 	"os"
 
 	"github.com/gin-gonic/gin"
 	routes "github.com/innovatorved/authenticationSystem-golang/routes"
+	"github.com/joho/godotenv"
 )
 
 func main() {
-	port := os.Getenv("PORT")
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatal("Error loading environment file")
+	}
 
+	port := os.Getenv("PORT")
 	if port == "" {
 		port = "4000"
 	}

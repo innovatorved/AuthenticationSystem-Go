@@ -193,6 +193,7 @@ func GetUser() gin.HandlerFunc {
 
 		if err := helper.MatchUserTypeToUid(c, userId); err != nil {
 			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+			return
 		}
 		var ctx, cancel = context.WithTimeout(context.Background(), 100*time.Second)
 
@@ -201,6 +202,7 @@ func GetUser() gin.HandlerFunc {
 		defer cancel()
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+			return
 		}
 
 		c.JSON(http.StatusOK, user)
