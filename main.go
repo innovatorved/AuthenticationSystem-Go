@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	routes "github.com/innovatorved/authenticationSystem-golang/routes"
+	routes "github.com/innovatorved/AuthenticationSystem-Go/routes"
 	"github.com/joho/godotenv"
 )
 

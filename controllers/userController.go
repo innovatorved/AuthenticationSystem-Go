@@ -10,9 +10,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
-	"github.com/innovatorved/authenticationSystem-golang/database"
-	helper "github.com/innovatorved/authenticationSystem-golang/helpers"
-	"github.com/innovatorved/authenticationSystem-golang/models"
+	"github.com/innovatorved/AuthenticationSystem-Go/database"
+	helper "github.com/innovatorved/AuthenticationSystem-Go/helpers"
+	"github.com/innovatorved/AuthenticationSystem-Go/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

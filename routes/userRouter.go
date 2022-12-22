@@ -2,8 +2,8 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	controller "github.com/innovatorved/authenticationSystem-golang/controllers"
-	"github.com/innovatorved/authenticationSystem-golang/middleware"
+	controller "github.com/innovatorved/AuthenticationSystem-Go/controllers"
+	"github.com/innovatorved/AuthenticationSystem-Go/middleware"
 )
 
 func UserRoutes(incomingRoutes *gin.Engine) {

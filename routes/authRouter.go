@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	controller "github.com/innovatorved/authenticationSystem-golang/controllers"
+	controller "github.com/innovatorved/AuthenticationSystem-Go/controllers"
 )
 
 func AuthRoutes(incomingRoutes *gin.Engine) {
